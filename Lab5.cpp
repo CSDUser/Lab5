@@ -22,15 +22,15 @@ using namespace std;
 
 int main()
 {
-	int x1 = 4; //strip from smalest coordinates of the dot 
-	int x2 = 8;
-	int y1 = 5;
-	int y2 = 8;
+	float x1 = 4; //strip from smalest coordinates of the dot 
+	float x2 = 8;
+	float y1 = 5;
+	float y2 = 8;
 
-	int a1 = 2; //ray
-	int a2 = 8;
-	int b1 = 8;
-	int b2 = 5;
+	float a1 = 2; //ray
+	float a2 = 8;
+	float b1 = 8;
+	float b2 = 5;
 
 	float X;
 	float Y;
@@ -41,10 +41,10 @@ int main()
 
 	printf("Dot of crossing:  X = %f,  Y = %f    \n", X, Y);
 
-	float K1 = (y1 - y2)*X + (x2 - x1)*Y + (x1*y2 - x2*y1);
-	float K2 = (b1 - b2)*X + (a2 - a1)*Y + (a1*b2 - a2*b1);
+	int K1 = (y1 - y2)*X + (x2 - x1)*Y + (x1*y2 - x2*y1);
+	int K2 = (b1 - b2)*X + (a2 - a1)*Y + (a1*b2 - a2*b1);
 
-	//printf("K1 = %f,  K2 = %f    \n", K1, K2);
+	printf("K1 = %d,  K2 = %d    \n", K1, K2);
 
 	bool b = false;
 
@@ -92,4 +92,5 @@ int main()
 
     return 0;
 }
+
 
